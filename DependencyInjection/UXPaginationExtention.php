@@ -24,6 +24,5 @@ class UXPaginationExtention extends Extension implements PrependExtensionInterfa
     public function prepend(ContainerBuilder $container)
     {
         $bundles = $container->getParameter('kernel.bundles');
-
     }
 }

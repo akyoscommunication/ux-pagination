@@ -165,7 +165,7 @@ trait ComponentWithPaginationTrait
     #[ExposeInTemplate]
     public function getPagination(): string
     {
-        return $this->render('@UXPagination/pagination/paginator.html.twig', [
+        return $this->render('@AkyosUXPagination/pagination/paginator.html.twig', [
             'elements' => $this->getElements(),
         ])->getContent();
     }
