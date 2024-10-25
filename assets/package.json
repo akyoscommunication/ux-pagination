@@ -1,0 +1,21 @@
+{
+  "name": "@akyoscommunication/ux-pagination",
+  "description": "UX Pagination using Live component",
+  "main": "dist/main.js",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "css_source": "src/app.css"
+  },
+  "symfony": {
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "postcss-prefix-selector": "^2.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

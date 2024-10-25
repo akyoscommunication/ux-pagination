@@ -1,0 +1,19 @@
+{% if pageCount > 1 %}
+	<div class="ux-paginator flex gap-8">
+		{% if previous is defined %}
+			<button class="gap-2 inline-flex justify-center items-center border cursor-pointer transition duration-300 ease-in-out text-black bg-none border-none p-0 rounded-none" rel="prev" data-action="live#action" data-live-page-param="{{ previous }}" data-live-action-param="toPage"><twig:ux:icon class="w-5 h-5" name="fontisto:arrow-left" /></button>
+		{% endif %}
+		<div class="flex gap-2">
+			{% for page in pagesInRange %}
+				{% if page != current %}
+					<button class="gap-2 inline-flex justify-center items-center border cursor-pointer transition duration-300 ease-in-out text-black bg-none border-none p-0 rounded-none w-8 h-8" data-action="live#action" data-live-page-param="{{ page }}" data-live-action-param="toPage">{{ page }}</button>
+				{% else %}
+					<button class="gap-2 inline-flex justify-center items-center border cursor-pointer transition duration-300 ease-in-out text-white bg-black border-black border-none p-0 rounded-none w-8 h-8" data-action="live#action" data-live-page-param="{{ page }}" data-live-action-param="toPage">{{ page }}</button>
+				{% endif %}
+			{% endfor %}
+		</div>
+		{% if next is defined %}
+			<button class="gap-2 inline-flex justify-center items-center border cursor-pointer transition duration-300 ease-in-out text-black bg-none border-none p-0 rounded-none w-8 h-8" data-action="live#action" data-live-page-param="{{ next }}" data-live-action-param="toPage"><twig:ux:icon class="w-5 h-5" name="fontisto:arrow-right" /></button>
+		{% endif %}
+	</div>
+{% endif %}
