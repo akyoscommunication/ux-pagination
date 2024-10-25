@@ -1,5 +1,5 @@
 {% if pageCount > 1 %}
-	<div class="ux-paginator flex gap-8">
+	<div class="ux-pagination flex gap-8">
 		{% if previous is defined %}
 			<button class="gap-2 inline-flex justify-center items-center border cursor-pointer transition duration-300 ease-in-out text-black bg-none border-none p-0 rounded-none" rel="prev" data-action="live#action" data-live-page-param="{{ previous }}" data-live-action-param="toPage"><twig:ux:icon class="w-5 h-5" name="fontisto:arrow-left" /></button>
 		{% endif %}
