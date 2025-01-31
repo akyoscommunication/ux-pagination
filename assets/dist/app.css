@@ -570,10 +570,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   height: 2rem;
 }
 
-.ux-pagination .w-3 {
-  width: 0.75rem;
-}
-
 .ux-pagination .w-5 {
   width: 1.25rem;
 }
